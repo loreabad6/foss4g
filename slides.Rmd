@@ -1,0 +1,200 @@
+---
+title:  "Reproducible spatial data visualization with R"
+subtitle: "R-spatial panel | FOSS4G 2021"  
+author: 
+  - "Lorena Abad"
+date: '30-09-2021'
+output:
+  xaringan::moon_reader:
+    lib_dir: libs
+    css: xaringan-themer.css
+    nature:
+      beforeInit: ["https://platform.twitter.com/widgets.js", "macro.js"]
+      highlightStyle: github
+      highlightLines: true
+      countIncrementalSlides: false
+      ratio: '16:9'
+---
+
+```{r setup, include=FALSE}
+options(htmltools.dir.version = FALSE)
+```
+
+```{r xaringan-themer, include=FALSE, warning=FALSE}
+library(xaringanthemer)
+style_mono_accent(
+  base_color = "#0a656e",
+  text_font_google = google_font("OpenSans"), 
+  # link_color = "#CCCCCC",
+  footnote_font_size = '0.5em',
+  footnote_position_bottom = "30px",
+  inverse_header_color = "#FFFFFF",
+  title_slide_text_color = "#0a656e",
+  title_slide_background_image = "https://raw.githubusercontent.com/loreabad6/MapArt/master/out/buenos_aires.png",
+  extra_css = list(
+    ".emph" = list("font-size" = "5em"
+    ))
+)
+```
+
+.pull-left[
+## Why with R?
+
+- Free and Open-source
+
+- Go to Data Science coding language
+
+- Amazing user community
+
+- **Great (spatial) visualization libraries**
+]
+
+.pull-right[
+.center[
+![:scale 100%](https://github.com/allisonhorst/stats-illustrations/raw/master/rstats-artwork/r_first_then.png)
+]
+]
+.footnote[
+Art from [@allison_horst](https://twitter.com/allison_horst)
+]
+
+---
+class: middle, center
+
+## How?
+
+--
+
+with .emph[**3**] simple steps...
+
+--
+
+and a world of packages to choose from!
+
+---
+## Step 1: Get some data!
+
+.center[
+<a href="https://docs.ropensci.org/rnaturalearth/"><img src="https://docs.ropensci.org/rnaturalearth/hexlogo.png" width="250px"; height="300px"/></a>
+<a href="https://github.com/walkerke/tigris"><img src="https://raw.githubusercontent.com/walkerke/tigris/master/tools/readme/tigris_sticker.png" width="250px"; height="300px"/></a>
+<a href="https://github.com/ropensci/osmdata"><img src="https://docs.ropensci.org/osmdata/reference/figures/osmhex.png" width="250px"; height="300px"/></a>
+]
+
+<br> 
+
+- rnaturalearth
+- tigris
+- osmdata 
+--
+
+- Your own data!
+
+---
+## Step 2: Map it!
+
+### Static
+
+Resource to get you started: [Geocomputation with R](https://geocompr.robinlovelace.net/adv-map.html)
+
+---
+## Step 2: Map it!
+
+### Interactive
+
+
+---
+## Step 3: Get inspired!
+
+- [#TidyTuesday](https://twitter.com/search?q=%23tidytuesday)
+
+- [#30DayMapChallenge](https://twitter.com/search?q=%2330daymapchallenge)
+
+- [#rspatial](https://twitter.com/search?q=%23rspatial&f=image)
+
+---
+class: center, top, inverse
+background-size: cover
+background-image: url(https://pbs.twimg.com/media/D84rFI5UcAE0oKz?format=jpg&name=large)
+
+--
+
+<blockquote class="twitter-tweet"><p lang="en" dir="ltr">First time doing spatial analysis for <a href="https://twitter.com/hashtag/TidyTuesday?src=hash&amp;ref_src=twsrc%5Etfw">#TidyTuesday</a>! I also imported another data set to further classify meteorites. Code can be found at: <a href="https://t.co/ruIA6VqfXR">https://t.co/ruIA6VqfXR</a> <a href="https://t.co/qfhFGkKMCf">pic.twitter.com/qfhFGkKMCf</a></p>&mdash; Catherine Williams (@catrwilliams) <a href="https://twitter.com/catrwilliams/status/1138895137331748865?ref_src=twsrc%5Etfw">June 12, 2019</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+.footnote[Code to reproduce: https://github.com/catrwilliams/rprojects/blob/master/tidytuesday/Meteorites.Rmd]
+
+---
+class: center, top, inverse
+background-size: cover
+background-image: url(https://pbs.twimg.com/media/E5ptXpMWUAczrR5?format=jpg&name=4096x4096)
+
+--
+
+<blockquote class="twitter-tweet"><p lang="en" dir="ltr">A map and a barplot for <a href="https://twitter.com/hashtag/TidyTuesday?src=hash&amp;ref_src=twsrc%5Etfw">#TidyTuesday</a>, happy independence day! From where did countries declare independence? <a href="https://twitter.com/hashtag/rstats?src=hash&amp;ref_src=twsrc%5Etfw">#rstats</a> <a href="https://twitter.com/hashtag/dataviz?src=hash&amp;ref_src=twsrc%5Etfw">#dataviz</a><br><br>Code: <a href="https://t.co/Hh0yHc49Eh">https://t.co/Hh0yHc49Eh</a> <a href="https://t.co/H0F9lJU73u">pic.twitter.com/H0F9lJU73u</a></p>&mdash; Julianna Calabrese (@jrosecalabrese) <a href="https://twitter.com/jrosecalabrese/status/1412562195636969474?ref_src=twsrc%5Etfw">July 7, 2021</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+.left[.footnote[Code to reproduce: https://github.com/jrcalabrese/TidyTuesday/blob/main/2021_week28/independence.Rmd]]
+
+---
+class: center, top, inverse
+background-size: cover
+background-image: url(https://pbs.twimg.com/media/E51SYVUVcAcxd2A?format=jpg&name=4096x4096)
+
+--
+
+<blockquote class="twitter-tweet"><p lang="en" dir="ltr">This is my first map done in R! Could not thank <a href="https://twitter.com/jrosecalabrese?ref_src=twsrc%5Etfw">@jrosecalabrese</a> enough for producing such comprehensive and easy-to-follow code. In order to be more creative, I am looking for a resource on mapping in R -- appreciate any recommendation :) <a href="https://twitter.com/hashtag/TidyTuesday?src=hash&amp;ref_src=twsrc%5Etfw">#TidyTuesday</a> <a href="https://twitter.com/hashtag/RStats?src=hash&amp;ref_src=twsrc%5Etfw">#RStats</a> <a href="https://t.co/Q5EHlG4uRu">pic.twitter.com/Q5EHlG4uRu</a></p>&mdash; chan (@CTrakulmaykee) <a href="https://twitter.com/CTrakulmaykee/status/1413376512229658631?ref_src=twsrc%5Etfw">July 9, 2021</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+
+---
+class: center, top, inverse
+background-size: cover
+background-image: url(https://pbs.twimg.com/media/EJmC7qYXUAAK61b?format=jpg&name=4096x4096)
+
+--
+
+<blockquote class="twitter-tweet"><p lang="en" dir="ltr">I&#39;ve already learned lots of things thanks to the <a href="https://twitter.com/hashtag/30DayMapChallenge?src=hash&amp;ref_src=twsrc%5Etfw">#30DayMapChallenge</a> - one major win is to get to know <a href="https://twitter.com/Natural_Earth?ref_src=twsrc%5Etfw">@Natural_Earth</a> and the resp. <a href="https://twitter.com/hashtag/rstats?src=hash&amp;ref_src=twsrc%5Etfw">#rstats</a>📦{rnaturalearth} 🌐 by <a href="https://twitter.com/rOpenSci?ref_src=twsrc%5Etfw">@rOpenSci</a>! Made my catch-up contribution for today&#39;s challenge &quot;zones&quot; very easy 🦸‍♂️<a href="https://twitter.com/hashtag/ggplot2?src=hash&amp;ref_src=twsrc%5Etfw">#ggplot2</a> <a href="https://twitter.com/hashtag/tidyverse?src=hash&amp;ref_src=twsrc%5Etfw">#tidyverse</a> <a href="https://twitter.com/hashtag/dataviz?src=hash&amp;ref_src=twsrc%5Etfw">#dataviz</a> <a href="https://t.co/AVs8VfVmw4">pic.twitter.com/AVs8VfVmw4</a></p>&mdash; Cédric Scherer (@CedScherer) <a href="https://twitter.com/CedScherer/status/1196131149074063361?ref_src=twsrc%5Etfw">November 17, 2019</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+--
+
+.left[.footnote[Code to reproduce: https://github.com/z3tt/30DayMapChallenge/blob/master/contributions/Day17_Zones/17_Zones.Rmd]]
+
+---
+class: center, top, inverse
+background-size: cover
+background-image: url(https://pbs.twimg.com/media/E0jJA1tXEAopQvt?format=jpg&name=4096x4096)
+
+--
+
+<blockquote class="twitter-tweet"><p lang="es" dir="ltr">El éxito inesperado del mapa 🗺️ de Valencia con muchas peticiones de todos vosotros me ha llevado a ofreceros un formato pdf de Valencia, Barcelona, Madrid y Málaga. ¡Gracias a todos! 🤩 <a href="https://t.co/IetioLkUVj">pic.twitter.com/IetioLkUVj</a></p>&mdash; Dr. Dominic Royé (@dr_xeo) <a href="https://twitter.com/dr_xeo/status/1389584111392669699?ref_src=twsrc%5Etfw">May 4, 2021</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+--
+
+.left[.footnote[Link to blogpost in Spanish: https://dominicroye.github.io/es/2019/visualizar-el-crecimiento-urbano/]]
+
+---
+
+- Packages:
+  - Plotly (to sync plot with map?)
+  - mapview
+  - tmap
+  - ggplot2
+  - mapsf
+  - base R
+- Static maps
+- Dataviz: plots and maps combined
+- Raster and vector together
+- Interactive maps
+  
+---
+
+class: center, middle
+
+# Thanks!
+
+Contact:
+
+`r anicon::faa("twitter", color = '#0a656e', animate = "wrench", anitype="parent-hover",rtext = "    [**@loreabad6**](https://twitter.com/loreabad6)") `
+
+`r anicon::faa("github", color = '#0a656e', animate = "wrench", anitype="parent-hover",rtext = "    [**loreabad6**](https://github.com/loreabad6)") `
+
+.left[.footnote[Slides created via the R package [**xaringan**](https://github.com/yihui/xaringan).]]
+
+

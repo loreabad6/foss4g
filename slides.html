@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="" xml:lang="">
+  <head>
+    <title>Reproducible spatial data visualization with R</title>
+    <meta charset="utf-8" />
+    <meta name="author" content="Lorena Abad" />
+    <script src="libs/header-attrs/header-attrs.js"></script>
+    <link href="libs/font-awesome-animation/font-awesome-animation-emi.css" rel="stylesheet" />
+    <script src="libs/fontawesome/js/fontawesome-all.min.js"></script>
+    <link rel="stylesheet" href="xaringan-themer.css" type="text/css" />
+  </head>
+  <body>
+    <textarea id="source">
+class: center, middle, inverse, title-slide
+
+# Reproducible spatial data visualization with R
+## R-spatial panel | FOSS4G 2021
+### Lorena Abad
+### 30-09-2021
+
+---
+
+
+
+
+
+
+.pull-left[
+## Why with R?
+
+- Free and Open-source
+
+- Go to Data Science coding language
+
+- Amazing user community
+
+- **Great (spatial) visualization libraries**
+]
+
+.pull-right[
+.center[
+![:scale 100%](https://github.com/allisonhorst/stats-illustrations/raw/master/rstats-artwork/r_first_then.png)
+]
+]
+.footnote[
+Art from [@allison_horst](https://twitter.com/allison_horst)
+]
+
+---
+class: middle, center
+
+## How?
+
+--
+
+with .emph[**3**] simple steps...
+
+--
+
+and a world of packages to choose from!
+
+---
+## Step 1: Get some data!
+
+.center[
+&lt;a href="https://docs.ropensci.org/rnaturalearth/"&gt;&lt;img src="https://docs.ropensci.org/rnaturalearth/hexlogo.png" width="250px"; height="300px"/&gt;&lt;/a&gt;
+&lt;a href="https://github.com/walkerke/tigris"&gt;&lt;img src="https://raw.githubusercontent.com/walkerke/tigris/master/tools/readme/tigris_sticker.png" width="250px"; height="300px"/&gt;&lt;/a&gt;
+&lt;a href="https://github.com/ropensci/osmdata"&gt;&lt;img src="https://docs.ropensci.org/osmdata/reference/figures/osmhex.png" width="250px"; height="300px"/&gt;&lt;/a&gt;
+]
+
+&lt;br&gt; 
+
+- rnaturalearth
+- tigris
+- osmdata 
+--
+
+- Your own data!
+
+---
+## Step 2: Map it!
+
+### Static
+
+Resource to get you started: [Geocomputation with R](https://geocompr.robinlovelace.net/adv-map.html)
+
+---
+## Step 2: Map it!
+
+### Interactive
+
+
+---
+## Step 3: Get inspired!
+
+- [#TidyTuesday](https://twitter.com/search?q=%23tidytuesday)
+
+- [#30DayMapChallenge](https://twitter.com/search?q=%2330daymapchallenge)
+
+- [#rspatial](https://twitter.com/search?q=%23rspatial&amp;f=image)
+
+---
+class: center, top, inverse
+background-size: cover
+background-image: url(https://pbs.twimg.com/media/D84rFI5UcAE0oKz?format=jpg&amp;name=large)
+
+--
+
+&lt;blockquote class="twitter-tweet"&gt;&lt;p lang="en" dir="ltr"&gt;First time doing spatial analysis for &lt;a href="https://twitter.com/hashtag/TidyTuesday?src=hash&amp;amp;ref_src=twsrc%5Etfw"&gt;#TidyTuesday&lt;/a&gt;! I also imported another data set to further classify meteorites. Code can be found at: &lt;a href="https://t.co/ruIA6VqfXR"&gt;https://t.co/ruIA6VqfXR&lt;/a&gt; &lt;a href="https://t.co/qfhFGkKMCf"&gt;pic.twitter.com/qfhFGkKMCf&lt;/a&gt;&lt;/p&gt;&amp;mdash; Catherine Williams (@catrwilliams) &lt;a href="https://twitter.com/catrwilliams/status/1138895137331748865?ref_src=twsrc%5Etfw"&gt;June 12, 2019&lt;/a&gt;&lt;/blockquote&gt; &lt;script async src="https://platform.twitter.com/widgets.js" charset="utf-8"&gt;&lt;/script&gt;
+
+.footnote[Code to reproduce: https://github.com/catrwilliams/rprojects/blob/master/tidytuesday/Meteorites.Rmd]
+
+---
+class: center, top, inverse
+background-size: cover
+background-image: url(https://pbs.twimg.com/media/E5ptXpMWUAczrR5?format=jpg&amp;name=4096x4096)
+
+--
+
+&lt;blockquote class="twitter-tweet"&gt;&lt;p lang="en" dir="ltr"&gt;A map and a barplot for &lt;a href="https://twitter.com/hashtag/TidyTuesday?src=hash&amp;amp;ref_src=twsrc%5Etfw"&gt;#TidyTuesday&lt;/a&gt;, happy independence day! From where did countries declare independence? &lt;a href="https://twitter.com/hashtag/rstats?src=hash&amp;amp;ref_src=twsrc%5Etfw"&gt;#rstats&lt;/a&gt; &lt;a href="https://twitter.com/hashtag/dataviz?src=hash&amp;amp;ref_src=twsrc%5Etfw"&gt;#dataviz&lt;/a&gt;&lt;br&gt;&lt;br&gt;Code: &lt;a href="https://t.co/Hh0yHc49Eh"&gt;https://t.co/Hh0yHc49Eh&lt;/a&gt; &lt;a href="https://t.co/H0F9lJU73u"&gt;pic.twitter.com/H0F9lJU73u&lt;/a&gt;&lt;/p&gt;&amp;mdash; Julianna Calabrese (@jrosecalabrese) &lt;a href="https://twitter.com/jrosecalabrese/status/1412562195636969474?ref_src=twsrc%5Etfw"&gt;July 7, 2021&lt;/a&gt;&lt;/blockquote&gt; &lt;script async src="https://platform.twitter.com/widgets.js" charset="utf-8"&gt;&lt;/script&gt;
+
+.left[.footnote[Code to reproduce: https://github.com/jrcalabrese/TidyTuesday/blob/main/2021_week28/independence.Rmd]]
+
+---
+class: center, top, inverse
+background-size: cover
+background-image: url(https://pbs.twimg.com/media/E51SYVUVcAcxd2A?format=jpg&amp;name=4096x4096)
+
+--
+
+&lt;blockquote class="twitter-tweet"&gt;&lt;p lang="en" dir="ltr"&gt;This is my first map done in R! Could not thank &lt;a href="https://twitter.com/jrosecalabrese?ref_src=twsrc%5Etfw"&gt;@jrosecalabrese&lt;/a&gt; enough for producing such comprehensive and easy-to-follow code. In order to be more creative, I am looking for a resource on mapping in R -- appreciate any recommendation :) &lt;a href="https://twitter.com/hashtag/TidyTuesday?src=hash&amp;amp;ref_src=twsrc%5Etfw"&gt;#TidyTuesday&lt;/a&gt; &lt;a href="https://twitter.com/hashtag/RStats?src=hash&amp;amp;ref_src=twsrc%5Etfw"&gt;#RStats&lt;/a&gt; &lt;a href="https://t.co/Q5EHlG4uRu"&gt;pic.twitter.com/Q5EHlG4uRu&lt;/a&gt;&lt;/p&gt;&amp;mdash; chan (@CTrakulmaykee) &lt;a href="https://twitter.com/CTrakulmaykee/status/1413376512229658631?ref_src=twsrc%5Etfw"&gt;July 9, 2021&lt;/a&gt;&lt;/blockquote&gt; &lt;script async src="https://platform.twitter.com/widgets.js" charset="utf-8"&gt;&lt;/script&gt;
+
+
+---
+class: center, top, inverse
+background-size: cover
+background-image: url(https://pbs.twimg.com/media/EJmC7qYXUAAK61b?format=jpg&amp;name=4096x4096)
+
+--
+
+&lt;blockquote class="twitter-tweet"&gt;&lt;p lang="en" dir="ltr"&gt;I&amp;#39;ve already learned lots of things thanks to the &lt;a href="https://twitter.com/hashtag/30DayMapChallenge?src=hash&amp;amp;ref_src=twsrc%5Etfw"&gt;#30DayMapChallenge&lt;/a&gt; - one major win is to get to know &lt;a href="https://twitter.com/Natural_Earth?ref_src=twsrc%5Etfw"&gt;@Natural_Earth&lt;/a&gt; and the resp. &lt;a href="https://twitter.com/hashtag/rstats?src=hash&amp;amp;ref_src=twsrc%5Etfw"&gt;#rstats&lt;/a&gt;📦{rnaturalearth} 🌐 by &lt;a href="https://twitter.com/rOpenSci?ref_src=twsrc%5Etfw"&gt;@rOpenSci&lt;/a&gt;! Made my catch-up contribution for today&amp;#39;s challenge &amp;quot;zones&amp;quot; very easy 🦸‍♂️&lt;a href="https://twitter.com/hashtag/ggplot2?src=hash&amp;amp;ref_src=twsrc%5Etfw"&gt;#ggplot2&lt;/a&gt; &lt;a href="https://twitter.com/hashtag/tidyverse?src=hash&amp;amp;ref_src=twsrc%5Etfw"&gt;#tidyverse&lt;/a&gt; &lt;a href="https://twitter.com/hashtag/dataviz?src=hash&amp;amp;ref_src=twsrc%5Etfw"&gt;#dataviz&lt;/a&gt; &lt;a href="https://t.co/AVs8VfVmw4"&gt;pic.twitter.com/AVs8VfVmw4&lt;/a&gt;&lt;/p&gt;&amp;mdash; Cédric Scherer (@CedScherer) &lt;a href="https://twitter.com/CedScherer/status/1196131149074063361?ref_src=twsrc%5Etfw"&gt;November 17, 2019&lt;/a&gt;&lt;/blockquote&gt; &lt;script async src="https://platform.twitter.com/widgets.js" charset="utf-8"&gt;&lt;/script&gt;
+
+--
+
+.left[.footnote[Code to reproduce: https://github.com/z3tt/30DayMapChallenge/blob/master/contributions/Day17_Zones/17_Zones.Rmd]]
+
+---
+class: center, top, inverse
+background-size: cover
+background-image: url(https://pbs.twimg.com/media/E0jJA1tXEAopQvt?format=jpg&amp;name=4096x4096)
+
+--
+
+&lt;blockquote class="twitter-tweet"&gt;&lt;p lang="es" dir="ltr"&gt;El éxito inesperado del mapa 🗺️ de Valencia con muchas peticiones de todos vosotros me ha llevado a ofreceros un formato pdf de Valencia, Barcelona, Madrid y Málaga. ¡Gracias a todos! 🤩 &lt;a href="https://t.co/IetioLkUVj"&gt;pic.twitter.com/IetioLkUVj&lt;/a&gt;&lt;/p&gt;&amp;mdash; Dr. Dominic Royé (@dr_xeo) &lt;a href="https://twitter.com/dr_xeo/status/1389584111392669699?ref_src=twsrc%5Etfw"&gt;May 4, 2021&lt;/a&gt;&lt;/blockquote&gt; &lt;script async src="https://platform.twitter.com/widgets.js" charset="utf-8"&gt;&lt;/script&gt;
+
+--
+
+.left[.footnote[Link to blogpost in Spanish: https://dominicroye.github.io/es/2019/visualizar-el-crecimiento-urbano/]]
+
+---
+
+- Packages:
+  - Plotly (to sync plot with map?)
+  - mapview
+  - tmap
+  - ggplot2
+  - mapsf
+  - base R
+- Static maps
+- Dataviz: plots and maps combined
+- Raster and vector together
+- Interactive maps
+  
+---
+
+class: center, middle
+
+# Thanks!
+
+Contact:
+
+<span class="faa-parent animated-hover">&lt;i class="fab  fa-twitter faa-wrench " style=" color:#0a656e;"&gt;&lt;/i&gt;    [**@loreabad6**](https://twitter.com/loreabad6)</span>
+
+<span class="faa-parent animated-hover">&lt;i class="fab  fa-github faa-wrench " style=" color:#0a656e;"&gt;&lt;/i&gt;    [**loreabad6**](https://github.com/loreabad6)</span>
+
+.left[.footnote[Slides created via the R package [**xaringan**](https://github.com/yihui/xaringan).]]
+
+
+    </textarea>
+<style data-target="print-only">@media screen {.remark-slide-container{display:block;}.remark-slide-scaler{box-shadow:none;}}</style>
+<script src="https://remarkjs.com/downloads/remark-latest.min.js"></script>
+<script src="https://platform.twitter.com/widgets.js"></script>
+<script src="macro.js"></script>
+<script>var slideshow = remark.create({
+"highlightStyle": "github",
+"highlightLines": true,
+"countIncrementalSlides": false,
+"ratio": "16:9"
+});
+if (window.HTMLWidgets) slideshow.on('afterShowSlide', function (slide) {
+  window.dispatchEvent(new Event('resize'));
+});
+(function(d) {
+  var s = d.createElement("style"), r = d.querySelector(".remark-slide-scaler");
+  if (!r) return;
+  s.type = "text/css"; s.innerHTML = "@page {size: " + r.style.width + " " + r.style.height +"; }";
+  d.head.appendChild(s);
+})(document);
+
+(function(d) {
+  var el = d.getElementsByClassName("remark-slides-area");
+  if (!el) return;
+  var slide, slides = slideshow.getSlides(), els = el[0].children;
+  for (var i = 1; i < slides.length; i++) {
+    slide = slides[i];
+    if (slide.properties.continued === "true" || slide.properties.count === "false") {
+      els[i - 1].className += ' has-continuation';
+    }
+  }
+  var s = d.createElement("style");
+  s.type = "text/css"; s.innerHTML = "@media print { .has-continuation { display: none; } }";
+  d.head.appendChild(s);
+})(document);
+// delete the temporary CSS (for displaying all slides initially) when the user
+// starts to view slides
+(function() {
+  var deleted = false;
+  slideshow.on('beforeShowSlide', function(slide) {
+    if (deleted) return;
+    var sheets = document.styleSheets, node;
+    for (var i = 0; i < sheets.length; i++) {
+      node = sheets[i].ownerNode;
+      if (node.dataset["target"] !== "print-only") continue;
+      node.parentNode.removeChild(node);
+    }
+    deleted = true;
+  });
+})();
+(function() {
+  "use strict"
+  // Replace <script> tags in slides area to make them executable
+  var scripts = document.querySelectorAll(
+    '.remark-slides-area .remark-slide-container script'
+  );
+  if (!scripts.length) return;
+  for (var i = 0; i < scripts.length; i++) {
+    var s = document.createElement('script');
+    var code = document.createTextNode(scripts[i].textContent);
+    s.appendChild(code);
+    var scriptAttrs = scripts[i].attributes;
+    for (var j = 0; j < scriptAttrs.length; j++) {
+      s.setAttribute(scriptAttrs[j].name, scriptAttrs[j].value);
+    }
+    scripts[i].parentElement.replaceChild(s, scripts[i]);
+  }
+})();
+(function() {
+  var links = document.getElementsByTagName('a');
+  for (var i = 0; i < links.length; i++) {
+    if (/^(https?:)?\/\//.test(links[i].getAttribute('href'))) {
+      links[i].target = '_blank';
+    }
+  }
+})();
+// adds .remark-code-has-line-highlighted class to <pre> parent elements
+// of code chunks containing highlighted lines with class .remark-code-line-highlighted
+(function(d) {
+  const hlines = d.querySelectorAll('.remark-code-line-highlighted');
+  const preParents = [];
+  const findPreParent = function(line, p = 0) {
+    if (p > 1) return null; // traverse up no further than grandparent
+    const el = line.parentElement;
+    return el.tagName === "PRE" ? el : findPreParent(el, ++p);
+  };
+
+  for (let line of hlines) {
+    let pre = findPreParent(line);
+    if (pre && !preParents.includes(pre)) preParents.push(pre);
+  }
+  preParents.forEach(p => p.classList.add("remark-code-has-line-highlighted"));
+})(document);</script>
+
+<script>
+slideshow._releaseMath = function(el) {
+  var i, text, code, codes = el.getElementsByTagName('code');
+  for (i = 0; i < codes.length;) {
+    code = codes[i];
+    if (code.parentNode.tagName !== 'PRE' && code.childElementCount === 0) {
+      text = code.textContent;
+      if (/^\\\((.|\s)+\\\)$/.test(text) || /^\\\[(.|\s)+\\\]$/.test(text) ||
+          /^\$\$(.|\s)+\$\$$/.test(text) ||
+          /^\\begin\{([^}]+)\}(.|\s)+\\end\{[^}]+\}$/.test(text)) {
+        code.outerHTML = code.innerHTML;  // remove <code></code>
+        continue;
+      }
+    }
+    i++;
+  }
+};
+slideshow._releaseMath(document);
+</script>
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+(function () {
+  var script = document.createElement('script');
+  script.type = 'text/javascript';
+  script.src  = 'https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-MML-AM_CHTML';
+  if (location.protocol !== 'file:' && /^https?:/.test(script.src))
+    script.src  = script.src.replace(/^https?:/, '');
+  document.getElementsByTagName('head')[0].appendChild(script);
+})();
+</script>
+  </body>
+</html>
