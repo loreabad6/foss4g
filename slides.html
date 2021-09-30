@@ -11,7 +11,7 @@
   </head>
   <body>
     <textarea id="source">
-class: center, middle, inverse, title-slide
+class: left, bottom, my-title, title-slide
 
 # Reproducible spatial data visualization with R
 ## R-spatial panel | FOSS4G 2021
@@ -25,28 +25,6 @@ class: center, middle, inverse, title-slide
 
 
 
-.pull-left[
-## Why with R?
-
-- Free and Open-source
-
-- Go to Data Science coding language
-
-- Amazing user community
-
-- **Great (spatial) visualization libraries**
-]
-
-.pull-right[
-.center[
-![:scale 100%](https://github.com/allisonhorst/stats-illustrations/raw/master/rstats-artwork/r_first_then.png)
-]
-]
-.footnote[
-Art from [@allison_horst](https://twitter.com/allison_horst)
-]
-
----
 class: middle, center
 
 ## How?
@@ -57,14 +35,19 @@ with .emph[**3**] simple steps...
 
 --
 
-and a world of packages to choose from!
+and a menu of packages to choose from!
+
+.left[.footnote[[Code to reproduce](https://github.com/loreabad6/MapArt/blob/master/data.R) title slide image.]]
 
 ---
 ## Step 1: Get some data!
 
+--
+
 .center[
 &lt;a href="https://docs.ropensci.org/rnaturalearth/"&gt;&lt;img src="https://docs.ropensci.org/rnaturalearth/hexlogo.png" width="250px"; height="300px"/&gt;&lt;/a&gt;
 &lt;a href="https://github.com/walkerke/tigris"&gt;&lt;img src="https://raw.githubusercontent.com/walkerke/tigris/master/tools/readme/tigris_sticker.png" width="250px"; height="300px"/&gt;&lt;/a&gt;
+&lt;a href="https://github.com/ipeaGIT/geobr"&gt;&lt;img src="https://github.com/ipeaGIT/geobr/raw/master/r-package/man/figures/geobr_logo_b.png?raw=true" width="250px"; height="300px"/&gt;&lt;/a&gt;
 &lt;a href="https://github.com/ropensci/osmdata"&gt;&lt;img src="https://docs.ropensci.org/osmdata/reference/figures/osmhex.png" width="250px"; height="300px"/&gt;&lt;/a&gt;
 ]
 
@@ -75,23 +58,74 @@ and a world of packages to choose from!
 - osmdata 
 --
 
-- Your own data!
+- **Your own data!**
 
 ---
-## Step 2: Map it!
+
+## Step 2: Bring it into R
+
+.center[
+&lt;a href="https://github.com/r-spatial/sf"&gt;&lt;img src="https://raw.githubusercontent.com/loreabad6/sfnetworks_WiG/main/figs/sf.png" width="250px"/&gt;&lt;/a&gt;
+&lt;a href="https://github.com/rspatial/terra"&gt;&lt;img src="https://raw.githubusercontent.com/rspatial/terra/master/man/figures/logo.png" width="250px"/&gt;&lt;/a&gt;
+]
+
+&lt;br&gt; 
+
+- sf
+- stars
+- terra (successor of raster)
+
+---
+
+## Step 3: Map it!
+
+--
 
 ### Static
 
-Resource to get you started: [Geocomputation with R](https://geocompr.robinlovelace.net/adv-map.html)
+.center[
+&lt;a href="https://github.com/tidyverse/ggplot2"&gt;&lt;img src="https://raw.githubusercontent.com/tidyverse/ggplot2/master/man/figures/logo.png" width="200px"/&gt;&lt;/a&gt;
+&lt;a href="https://github.com/mtennekes/tmap"&gt;&lt;img src="https://user-images.githubusercontent.com/3457131/78889069-479c5480-7a63-11ea-9d76-e8a0acc55c3f.png" width="200px"/&gt;&lt;/a&gt;
+&lt;a href="https://github.com/riatelab/mapsf"&gt;&lt;img src="https://raw.githubusercontent.com/riatelab/mapsf/master/man/figures/logo.png" width="200px"/&gt;&lt;/a&gt;
+]
+
+&lt;br&gt;
+
+- Base R
+- ggplot2 (+ [ggspatial](https://github.com/paleolimbot/ggspatial))
+- tmap
+- mapsf
 
 ---
-## Step 2: Map it!
+
+## Step 3: Map it!
 
 ### Interactive
 
+.center[
+&lt;a href="https://github.com/mtennekes/tmap"&gt;&lt;img src="https://user-images.githubusercontent.com/3457131/78889069-479c5480-7a63-11ea-9d76-e8a0acc55c3f.png" width="200px"/&gt;&lt;/a&gt;
+&lt;a href="https://github.com/r-spatial/mapview/"&gt;&lt;img src="https://github.com/tim-salabim/mvl/blob/cstriestohelp/imagery/animated/box_anim.gif?raw=true" width="200px"/&gt;&lt;/a&gt;
+]
+
+&lt;br&gt;
+
+- tmap
+- mapview
+- [mapdeck](https://github.com/SymbolixAU/mapdeck/)
+- [leaflet](https://rstudio.github.io/leaflet/)
+- [rayshader](https://github.com/tylermorganwall/rayshader)
 
 ---
-## Step 3: Get inspired!
+
+## Get started!
+
+- [Geocomputation with R](https://geocompr.robinlovelace.net/adv-map.html)
+
+- Drawing beautiful maps programmatically with R, sf and ggplot 2 [part 1](https://r-spatial.org/r/2018/10/25/ggplot2-sf.html), [part 2](https://r-spatial.org/r/2018/10/25/ggplot2-sf-2.html) and [part 3](https://r-spatial.org/r/2018/10/25/ggplot2-sf-3.html)
+
+---
+
+## Bonus: Get inspired!
 
 - [#TidyTuesday](https://twitter.com/search?q=%23tidytuesday)
 
@@ -100,76 +134,58 @@ Resource to get you started: [Geocomputation with R](https://geocompr.robinlovel
 - [#rspatial](https://twitter.com/search?q=%23rspatial&amp;f=image)
 
 ---
-class: center, top, inverse
-background-size: cover
-background-image: url(https://pbs.twimg.com/media/D84rFI5UcAE0oKz?format=jpg&amp;name=large)
+class: center, middle
 
---
-
+&lt;center&gt;
 &lt;blockquote class="twitter-tweet"&gt;&lt;p lang="en" dir="ltr"&gt;First time doing spatial analysis for &lt;a href="https://twitter.com/hashtag/TidyTuesday?src=hash&amp;amp;ref_src=twsrc%5Etfw"&gt;#TidyTuesday&lt;/a&gt;! I also imported another data set to further classify meteorites. Code can be found at: &lt;a href="https://t.co/ruIA6VqfXR"&gt;https://t.co/ruIA6VqfXR&lt;/a&gt; &lt;a href="https://t.co/qfhFGkKMCf"&gt;pic.twitter.com/qfhFGkKMCf&lt;/a&gt;&lt;/p&gt;&amp;mdash; Catherine Williams (@catrwilliams) &lt;a href="https://twitter.com/catrwilliams/status/1138895137331748865?ref_src=twsrc%5Etfw"&gt;June 12, 2019&lt;/a&gt;&lt;/blockquote&gt; &lt;script async src="https://platform.twitter.com/widgets.js" charset="utf-8"&gt;&lt;/script&gt;
+&lt;/center&gt;
 
-.footnote[Code to reproduce: https://github.com/catrwilliams/rprojects/blob/master/tidytuesday/Meteorites.Rmd]
+.left[.footnote[[Code to reproduce](https://github.com/catrwilliams/rprojects/blob/master/tidytuesday/Meteorites.Rmd)]]
 
 ---
-class: center, top, inverse
-background-size: cover
-background-image: url(https://pbs.twimg.com/media/E5ptXpMWUAczrR5?format=jpg&amp;name=4096x4096)
+class: center, middle
 
---
-
+&lt;center&gt;
 &lt;blockquote class="twitter-tweet"&gt;&lt;p lang="en" dir="ltr"&gt;A map and a barplot for &lt;a href="https://twitter.com/hashtag/TidyTuesday?src=hash&amp;amp;ref_src=twsrc%5Etfw"&gt;#TidyTuesday&lt;/a&gt;, happy independence day! From where did countries declare independence? &lt;a href="https://twitter.com/hashtag/rstats?src=hash&amp;amp;ref_src=twsrc%5Etfw"&gt;#rstats&lt;/a&gt; &lt;a href="https://twitter.com/hashtag/dataviz?src=hash&amp;amp;ref_src=twsrc%5Etfw"&gt;#dataviz&lt;/a&gt;&lt;br&gt;&lt;br&gt;Code: &lt;a href="https://t.co/Hh0yHc49Eh"&gt;https://t.co/Hh0yHc49Eh&lt;/a&gt; &lt;a href="https://t.co/H0F9lJU73u"&gt;pic.twitter.com/H0F9lJU73u&lt;/a&gt;&lt;/p&gt;&amp;mdash; Julianna Calabrese (@jrosecalabrese) &lt;a href="https://twitter.com/jrosecalabrese/status/1412562195636969474?ref_src=twsrc%5Etfw"&gt;July 7, 2021&lt;/a&gt;&lt;/blockquote&gt; &lt;script async src="https://platform.twitter.com/widgets.js" charset="utf-8"&gt;&lt;/script&gt;
+&lt;/center&gt;
 
-.left[.footnote[Code to reproduce: https://github.com/jrcalabrese/TidyTuesday/blob/main/2021_week28/independence.Rmd]]
+.left[.footnote[[Code to reproduce](https://github.com/jrcalabrese/TidyTuesday/blob/main/2021_week28/independence.Rmd)]]
 
 ---
-class: center, top, inverse
-background-size: cover
-background-image: url(https://pbs.twimg.com/media/E51SYVUVcAcxd2A?format=jpg&amp;name=4096x4096)
+class: center, middle
 
---
-
+&lt;center&gt;
 &lt;blockquote class="twitter-tweet"&gt;&lt;p lang="en" dir="ltr"&gt;This is my first map done in R! Could not thank &lt;a href="https://twitter.com/jrosecalabrese?ref_src=twsrc%5Etfw"&gt;@jrosecalabrese&lt;/a&gt; enough for producing such comprehensive and easy-to-follow code. In order to be more creative, I am looking for a resource on mapping in R -- appreciate any recommendation :) &lt;a href="https://twitter.com/hashtag/TidyTuesday?src=hash&amp;amp;ref_src=twsrc%5Etfw"&gt;#TidyTuesday&lt;/a&gt; &lt;a href="https://twitter.com/hashtag/RStats?src=hash&amp;amp;ref_src=twsrc%5Etfw"&gt;#RStats&lt;/a&gt; &lt;a href="https://t.co/Q5EHlG4uRu"&gt;pic.twitter.com/Q5EHlG4uRu&lt;/a&gt;&lt;/p&gt;&amp;mdash; chan (@CTrakulmaykee) &lt;a href="https://twitter.com/CTrakulmaykee/status/1413376512229658631?ref_src=twsrc%5Etfw"&gt;July 9, 2021&lt;/a&gt;&lt;/blockquote&gt; &lt;script async src="https://platform.twitter.com/widgets.js" charset="utf-8"&gt;&lt;/script&gt;
-
+&lt;/center&gt;
 
 ---
-class: center, top, inverse
-background-size: cover
-background-image: url(https://pbs.twimg.com/media/EJmC7qYXUAAK61b?format=jpg&amp;name=4096x4096)
+class: center, middle
 
---
-
+&lt;center&gt;
 &lt;blockquote class="twitter-tweet"&gt;&lt;p lang="en" dir="ltr"&gt;I&amp;#39;ve already learned lots of things thanks to the &lt;a href="https://twitter.com/hashtag/30DayMapChallenge?src=hash&amp;amp;ref_src=twsrc%5Etfw"&gt;#30DayMapChallenge&lt;/a&gt; - one major win is to get to know &lt;a href="https://twitter.com/Natural_Earth?ref_src=twsrc%5Etfw"&gt;@Natural_Earth&lt;/a&gt; and the resp. &lt;a href="https://twitter.com/hashtag/rstats?src=hash&amp;amp;ref_src=twsrc%5Etfw"&gt;#rstats&lt;/a&gt;📦{rnaturalearth} 🌐 by &lt;a href="https://twitter.com/rOpenSci?ref_src=twsrc%5Etfw"&gt;@rOpenSci&lt;/a&gt;! Made my catch-up contribution for today&amp;#39;s challenge &amp;quot;zones&amp;quot; very easy 🦸‍♂️&lt;a href="https://twitter.com/hashtag/ggplot2?src=hash&amp;amp;ref_src=twsrc%5Etfw"&gt;#ggplot2&lt;/a&gt; &lt;a href="https://twitter.com/hashtag/tidyverse?src=hash&amp;amp;ref_src=twsrc%5Etfw"&gt;#tidyverse&lt;/a&gt; &lt;a href="https://twitter.com/hashtag/dataviz?src=hash&amp;amp;ref_src=twsrc%5Etfw"&gt;#dataviz&lt;/a&gt; &lt;a href="https://t.co/AVs8VfVmw4"&gt;pic.twitter.com/AVs8VfVmw4&lt;/a&gt;&lt;/p&gt;&amp;mdash; Cédric Scherer (@CedScherer) &lt;a href="https://twitter.com/CedScherer/status/1196131149074063361?ref_src=twsrc%5Etfw"&gt;November 17, 2019&lt;/a&gt;&lt;/blockquote&gt; &lt;script async src="https://platform.twitter.com/widgets.js" charset="utf-8"&gt;&lt;/script&gt;
+&lt;/center&gt;
 
---
 
-.left[.footnote[Code to reproduce: https://github.com/z3tt/30DayMapChallenge/blob/master/contributions/Day17_Zones/17_Zones.Rmd]]
-
----
-class: center, top, inverse
-background-size: cover
-background-image: url(https://pbs.twimg.com/media/E0jJA1tXEAopQvt?format=jpg&amp;name=4096x4096)
-
---
-
-&lt;blockquote class="twitter-tweet"&gt;&lt;p lang="es" dir="ltr"&gt;El éxito inesperado del mapa 🗺️ de Valencia con muchas peticiones de todos vosotros me ha llevado a ofreceros un formato pdf de Valencia, Barcelona, Madrid y Málaga. ¡Gracias a todos! 🤩 &lt;a href="https://t.co/IetioLkUVj"&gt;pic.twitter.com/IetioLkUVj&lt;/a&gt;&lt;/p&gt;&amp;mdash; Dr. Dominic Royé (@dr_xeo) &lt;a href="https://twitter.com/dr_xeo/status/1389584111392669699?ref_src=twsrc%5Etfw"&gt;May 4, 2021&lt;/a&gt;&lt;/blockquote&gt; &lt;script async src="https://platform.twitter.com/widgets.js" charset="utf-8"&gt;&lt;/script&gt;
-
---
-
-.left[.footnote[Link to blogpost in Spanish: https://dominicroye.github.io/es/2019/visualizar-el-crecimiento-urbano/]]
+.left[.footnote[[Code to reproduce](https://github.com/z3tt/30DayMapChallenge/blob/master/contributions/Day17_Zones/17_Zones.Rmd)]]
 
 ---
+class: center, middle
 
-- Packages:
-  - Plotly (to sync plot with map?)
-  - mapview
-  - tmap
-  - ggplot2
-  - mapsf
-  - base R
-- Static maps
-- Dataviz: plots and maps combined
-- Raster and vector together
-- Interactive maps
+&lt;center&gt;
+&lt;blockquote class="twitter-tweet"&gt;&lt;p lang="en" dir="ltr"&gt;New &lt;a href="https://twitter.com/hashtag/dataviz?src=hash&amp;amp;ref_src=twsrc%5Etfw"&gt;#dataviz&lt;/a&gt;! The Earth&amp;#39;s submarine fiber optic cable network, visualized in &lt;a href="https://twitter.com/hashtag/RStats?src=hash&amp;amp;ref_src=twsrc%5Etfw"&gt;#RStats&lt;/a&gt; with &lt;a href="https://twitter.com/hashtag/rayrender?src=hash&amp;amp;ref_src=twsrc%5Etfw"&gt;#rayrender&lt;/a&gt;. &lt;br&gt;&lt;br&gt;Code:&lt;a href="https://t.co/6tFsS4vfAK"&gt;https://t.co/6tFsS4vfAK&lt;/a&gt;&lt;br&gt;&lt;br&gt;Rayrender Github:&lt;a href="https://t.co/iB5nWhGY7l"&gt;https://t.co/iB5nWhGY7l&lt;/a&gt; &lt;a href="https://t.co/1FTKM0FPHr"&gt;pic.twitter.com/1FTKM0FPHr&lt;/a&gt;&lt;/p&gt;&amp;mdash; Tyler Morgan-Wall (@tylermorganwall) &lt;a href="https://twitter.com/tylermorganwall/status/1440669533157556227?ref_src=twsrc%5Etfw"&gt;September 22, 2021&lt;/a&gt;&lt;/blockquote&gt; &lt;script async src="https://platform.twitter.com/widgets.js" charset="utf-8"&gt;&lt;/script&gt;
+&lt;/center&gt;
+
+.left[.footnote[[Code to reproduce](https://gist.github.com/tylermorganwall/b222fcebcac3de56a6e144d73d166322)]]
+
+---
+class: center, middle
+
+&lt;center&gt;
+&lt;blockquote class="twitter-tweet"&gt;&lt;p lang="es" dir="ltr"&gt;En &lt;a href="https://twitter.com/eitbNoticias?ref_src=twsrc%5Etfw"&gt;@eitbNoticias&lt;/a&gt; han usado mis mapas de crecimiento para explicar el efecto de la isla de calor en Bilbao. 🤩 &lt;a href="https://t.co/7dGydGKHad"&gt;pic.twitter.com/7dGydGKHad&lt;/a&gt;&lt;/p&gt;&amp;mdash; Dr. Dominic Royé (@dr_xeo) &lt;a href="https://twitter.com/dr_xeo/status/1405540316552126470?ref_src=twsrc%5Etfw"&gt;June 17, 2021&lt;/a&gt;&lt;/blockquote&gt; &lt;script async src="https://platform.twitter.com/widgets.js" charset="utf-8"&gt;&lt;/script&gt;
+&lt;/center&gt;
+
+
+.left[.footnote[[Link to blogpost in Spanish](https://dominicroye.github.io/es/2019/visualizar-el-crecimiento-urbano/)]]
   
 ---
 
